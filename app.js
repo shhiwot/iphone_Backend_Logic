@@ -11,6 +11,12 @@ const createTablesRoute = require("./db/createTable");
 app.use("/install", createTablesRoute);
 
 
+
+app.get("/", (req, res) => {
+  res.send("Hello from Express!");
+});
+
+
 //extract iphone products 
 
 app.get("/iPhone", (req, res) => {
